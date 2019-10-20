@@ -15,6 +15,9 @@
 		55CB2DB7235BFB830082906D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CB2DB5235BFB830082906D /* LaunchScreen.storyboard */; };
 		55CB2DC2235BFB830082906D /* SwiftUI_PracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CB2DC1235BFB830082906D /* SwiftUI_PracticeTests.swift */; };
 		55CB2DCD235BFB830082906D /* SwiftUI_PracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CB2DCC235BFB830082906D /* SwiftUI_PracticeUITests.swift */; };
+		55CB2DDC235BFD8E0082906D /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CB2DDB235BFD8E0082906D /* UserViewModel.swift */; };
+		55CB2DDF235C025C0082906D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CB2DDE235C025C0082906D /* LoginView.swift */; };
+		55CB2DE1235C0EC60082906D /* SecureLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CB2DE0235C0EC60082906D /* SecureLandingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		55CB2DC8235BFB830082906D /* SwiftUI-PracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-PracticeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CB2DCC235BFB830082906D /* SwiftUI_PracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_PracticeUITests.swift; sourceTree = "<group>"; };
 		55CB2DCE235BFB830082906D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55CB2DDB235BFD8E0082906D /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		55CB2DDE235C025C0082906D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		55CB2DE0235C0EC60082906D /* SecureLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureLandingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,11 @@
 		55CB2DA9235BFB810082906D /* SwiftUI-Practice */ = {
 			isa = PBXGroup;
 			children = (
+				55CB2DDD235C00700082906D /* Views */,
+				55CB2DDA235BFCEE0082906D /* ViewModels */,
 				55CB2DAA235BFB810082906D /* AppDelegate.swift */,
-				55CB2DAC235BFB810082906D /* SceneDelegate.swift */,
 				55CB2DAE235BFB810082906D /* ContentView.swift */,
+				55CB2DAC235BFB810082906D /* SceneDelegate.swift */,
 				55CB2DB0235BFB830082906D /* Assets.xcassets */,
 				55CB2DB5235BFB830082906D /* LaunchScreen.storyboard */,
 				55CB2DB8235BFB830082906D /* Info.plist */,
@@ -134,6 +142,23 @@
 				55CB2DCE235BFB830082906D /* Info.plist */,
 			);
 			path = "SwiftUI-PracticeUITests";
+			sourceTree = "<group>";
+		};
+		55CB2DDA235BFCEE0082906D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				55CB2DDB235BFD8E0082906D /* UserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		55CB2DDD235C00700082906D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55CB2DDE235C025C0082906D /* LoginView.swift */,
+				55CB2DE0235C0EC60082906D /* SecureLandingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,8 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55CB2DE1235C0EC60082906D /* SecureLandingView.swift in Sources */,
 				55CB2DAB235BFB810082906D /* AppDelegate.swift in Sources */,
+				55CB2DDC235BFD8E0082906D /* UserViewModel.swift in Sources */,
 				55CB2DAD235BFB810082906D /* SceneDelegate.swift in Sources */,
+				55CB2DDF235C025C0082906D /* LoginView.swift in Sources */,
 				55CB2DAF235BFB810082906D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
